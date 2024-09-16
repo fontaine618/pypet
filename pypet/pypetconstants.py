@@ -101,28 +101,34 @@ for key in PARAMETERTYPEDICT.keys():
 
     COMPATPARAMETERTYPEDICT[typestr] = dtype
 
+# Interaction with more recent numpy veersions
 PARAMETER_SUPPORTED_DATA = (numpy.int8,
                             numpy.int16,
                             numpy.int32,
                             numpy.int64,
+                            # numpy.int,
                             numpy.int_,
+                            # numpy.long,
                             numpy.uint8,
                             numpy.uint16,
                             numpy.uint32,
                             numpy.uint64,
+                            # numpy.bool,
                             numpy.bool_,
                             numpy.float32,
                             numpy.float64,
+                            # numpy.float,
                             numpy.float_,
                             numpy.complex64,
+                            # numpy.complex,
                             numpy.complex_,
                             numpy.str_,
+                            str,
+                            bytes,
                             bool,
                             int,
-                            complex,
                             float,
-                            str,
-                            bytes)
+                            complex)
 """Set of supported scalar types by the storage service and the standard parameter"""
 
 
